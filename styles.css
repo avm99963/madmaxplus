@@ -1,0 +1,88 @@
+:root {
+  --mdc-theme-primary: #1976d2!important;
+  --mdc-theme-secondary: #673ab7!important;
+  --mdc-theme-on-primary: #ffffff!important;
+  --mdc-theme-on-secondary: #ffffff!important;
+}
+
+body {
+  font-family: 'Roboto', 'Helvetica', sans-serif;
+  margin: 0;
+}
+
+.centered {
+  display: block;
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+.centered h1, .centered h2, .centered h3, .centered h4, .centered h5, .centered h6 {
+  text-align: center;
+}
+
+.button-margin {
+  margin-top: 10px;
+}
+
+#chart {
+  height: 250px;
+  margin-bottom: 20px;
+}
+
+.card-content {
+  padding: 1rem;
+}
+
+.card-content .title {
+  margin: 0;
+}
+
+.mdc-select:not(.mdc-select--disabled).mdc-select--focused .mdc-floating-label {
+  color: var(--mdc-theme-primary)!important;
+}
+
+.content {
+  max-width: 700px;
+  margin: 16px auto;
+  padding: 16px;
+}
+
+.rounds {
+  text-align: center;
+}
+
+.rounds td {
+  padding: 4px 8px;
+}
+
+.rounds td:nth-child(1) {
+  padding-left: 16px;
+}
+
+.rounds .icon.done {
+  color: #43A047;
+}
+
+.rounds .icon.clear {
+  color: #E53935;
+}
+
+.rounds .player .playername {
+  font-family: "Roboto Mono", monospace;
+  font-size: 14px;
+}
+
+.rounds .player .score {
+  color: var(--mdc-theme-text-secondary-on-background);
+  font-size: 14px;
+}
+
+.rounds .player.me .playername {
+  font-weight: bold;
+}
+
+.rounds .player.notqualified .playername {
+  color: #E53935;
+}
