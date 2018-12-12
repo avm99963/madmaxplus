@@ -66,7 +66,7 @@ if ($data === false)
               <td>Torn <?=$j?></td>
               <?php
               foreach ($match["players"] as $pemail => $p) {
-                echo "<td class='player".($pemail === $email ? " me" : "").(($match["played"] != "true" || $match["players"][$pemail]["qualified"]) ? "" : " notqualified")."'><span class='playername'>".htmlspecialchars($p["player_name"])."</span>".($match["played"] == "true" ? "<br><span class='score'>".(int)$p["score"]."</span>" : "")."</td>";
+                echo "<td class='player".($pemail === $email ? " me" : "").(($match["played"] != "true" || $match["players"][$pemail]["qualified"]) ? "" : " notqualified")."'><span class='playername' title='".htmlspecialchars(explode("@", $pemail)[0])."'>".htmlspecialchars($p["player_name"])."</span>".($match["played"] == "true" ? "<br><span class='score'>".(int)$p["score"]."</span>" : "")."</td>";
               }
               ?>
               <td><a href="<?=htmlspecialchars($match["url"])?>" target="_blank" class="mdc-icon-button material-icons">play_circle_outline</a></td>
