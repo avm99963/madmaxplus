@@ -44,9 +44,12 @@ body {
 }
 
 .content {
-  max-width: 700px;
+  width: 700px;
+  max-width: Calc(100% - 32px);
   margin: 16px auto;
   padding: 16px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .rounds {
